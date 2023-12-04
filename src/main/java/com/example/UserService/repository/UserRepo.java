@@ -14,6 +14,7 @@ public interface UserRepo extends CrudRepository<User,String> {
 
     @Query("SELECT u.hashedPassword FROM User u WHERE u.email = :email")
     String findHashedPasswordByEmail(@Param("email") String email);
+//    vgbhj
 
 
 }
